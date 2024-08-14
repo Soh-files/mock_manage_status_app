@@ -1,0 +1,124 @@
+@charset "UTF-8";
+
+/* 全体 */
+:root {
+    /* 変数 */
+    --main-color: #ffc672;
+    /* 標準サイズ */
+    font-size: 20px;
+}
+
+/* 共通 */
+body {
+    font-size: 16px;
+    font-family: sans-serif;
+}
+.mico-btn {
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    padding: 0.75rem;
+    text-decoration: none;
+    color: #333;
+    border: solid 3px #333;
+    border-radius: 0.5rem;
+    background-color: var(--main-color);
+}
+
+/* ログイン画面 */
+.login-background {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--main-color);
+}
+
+/* トップ画面 */
+.top-background {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../img/トップ画像.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+/* ボタン関連 */
+.btn-container {
+    position: relative;
+}
+.btn-absolute {
+    position: absolute;
+    left: 1280px;
+}
+.btn-base {
+    width: 20rem;
+    font-size: 1.5rem;
+}
+.submenu-base {
+    position: absolute;
+    left: 400px;
+    width: 165px;
+    background-color: #FFF;
+    border-radius: 0.25rem;
+    transition: 0.7s;
+}
+/* Idea */
+.btn-idea {
+    top: 50px;
+}
+.submenu-idea {
+    opacity: 0;
+    top: 30px;
+}
+.btn-idea:hover .submenu-idea {
+    opacity: 1;
+    top: 20px;
+}
+/* Meeting */
+.btn-meeting {
+    top: 200px;
+}
+.submenu-meeting {
+    opacity: 0;
+    top: 30px;
+}
+.btn-meeting:hover .submenu-meeting {
+    opacity: 1;
+    top: 20px;
+}
+/* Under Development */
+.btn-development {
+    top: 350px;
+}
+.submenu-development {
+    opacity: 0;
+    top: 30px;
+}
+.btn-development:hover .submenu-development {
+    opacity: 1;
+    top: 20px;
+}
+/* Released */
+.btn-released {
+    top: 500px;
+}
+.submenu-released {
+    opacity: 0;
+    top: 30px;
+}
+.btn-released:hover .submenu-released {
+    opacity: 1;
+    top: 20px;
+}
+
+/* Idea一覧画面 */
+.btn-proposal {
+    width: 15rem;
+    font-size: 1.3rem;
+}
+
+/* 提案書作成画面 */
+.mark-required {
+    color: #F00;
+}
+.mark-norequired {
+    color: #FFF;
+}

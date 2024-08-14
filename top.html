@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>進捗管理アプリ | トップ</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/reset.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="top-background">
+        <!-- ヘッダー -->
+        <div class="container-fluid px-5 py-2 bg-white">
+            <div class="d-flex align-items-center justify-content-between">
+                <div>
+                    <h6 class="text-center">京世でログイン中！</h6>
+                </div>
+                <div class="d-flex align-items-center">
+                    <a href="login.html" class="btn btn-primary btn-sm">ログアウト</a>
+                </div>
+            </div>
+        </div>
+        <div class="btn-container">
+            <!-- Idea -->
+            <div class="btn-absolute btn-idea">
+                <a href="proposal_list.html" class="mico-btn btn-base">Idea</a>
+                <nav class="nav flex-column submenu-base submenu-idea">
+                    <a class="nav-link text-dark" href="proposal_list.html">Idea一覧</a>
+                    <a class="nav-link text-dark" href="proposal.html">提案書作成</a>
+                </nav>
+            </div>
+            <!-- Meeting -->
+            <div class="btn-absolute btn-meeting">
+                <a href="" class="mico-btn btn-base">Meeting</a>
+                <nav class="nav flex-column submenu-base submenu-meeting">
+                    <a class="nav-link text-dark" href="#">アジェンダ一覧</a>
+                    <a class="nav-link text-dark" href="#">議事録作成</a>
+                    <a class="nav-link text-dark" href="#">ALL</a>
+                </nav>
+            </div>
+            <!-- Under Development -->
+            <div class="btn-absolute btn-development">
+                <a href="" class="mico-btn btn-base">Under Development</a>
+                <nav class="nav flex-column submenu-base submenu-development">
+                    <a class="nav-link text-dark" href="#">基本設計</a>
+                    <a class="nav-link text-dark" href="#">詳細設計</a>
+                </nav>
+            </div>
+            <!-- Released -->
+            <div class="btn-absolute btn-released">
+                <a href="" class="mico-btn btn-base">Released</a>
+                <nav class="nav flex-column submenu-base submenu-released">
+                    <a class="nav-link text-dark" href="#">課題管理</a>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <!-- JS -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

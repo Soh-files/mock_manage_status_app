@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>進捗管理アプリ | Idea一覧</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/reset.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container-fluid px-5 mb-5">
+        <!-- ヘッダー -->
+        <div class="py-2 bg-white">
+            <div class="d-flex align-items-center justify-content-between">
+                <div>
+                    <h6 class="text-center">京世でログイン中！</h6>
+                </div>
+                <div class="d-flex align-items-center">
+                    <a href="top.html" class="btn btn-primary btn-sm me-4">トップへ</a>
+                    <a href="login.html" class="btn btn-primary btn-sm">ログアウト</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- 提案書作成ボタン -->
+        <div class="text-start p-3 mb-5">
+            <a href="proposal.html" class="mico-btn btn-proposal">提案書作成</a>
+        </div>
+
+        <!-- タブ -->
+        <ul class="nav nav-tabs mb-3" id="menuTab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <a href="#all" class="nav-link active text-dark" id="tab-all" data-bs-toggle="tab" role="tab" aria-controls="all" aria-selected="true">ALL</a>
+            </li>
+            <li class="nav-item" role="presentation">
+                <a href="#proposal" class="nav-link text-dark" id="tab-proposal" data-bs-toggle="tab" role="tab" aria-controls="proposal" aria-selected="false">登録済提案書</a>
+            </li>
+            <li class="nav-item" role="presentation">
+                <a href="#editing" class="nav-link text-dark" id="tab-editing" data-bs-toggle="tab" role="tab" aria-controls="editing" aria-selected="false">一時保存</a>
+            </li>
+            <li class="nav-item" role="presentation">
+                <a href="#memo" class="nav-link text-dark" id="tab-memo" data-bs-toggle="tab" role="tab" aria-controls="memo" aria-selected="false">メモ</a>
+            </li>     
+        </ul>
+
+        <!-- タブの中身 -->
+        <div class="tab-content" id="menuTabContent">
+            <!-- ALLタブ -->
+            <div class="tab-pane fade show active" id="all" role="tabpanel" aria-labelledby="tab-all">
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <td class="text-center align-middle" style="width: 30%;">タイトル</td>
+                            <td class="text-center align-middle" style="width: 10%;">提案者</td>
+                            <td class="text-center align-middle" style="width: 30%;">開発ツール</td>
+                            <td class="text-center align-middle" style="width: 20%;">状況</td>
+                            <td style="width: 10%;"></td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="align-middle">年間カレンダー開発</td>
+                            <td class="text-center align-middle">京世</td>
+                            <td class="align-middle">Excel(マクロなし) / Excel(マクロあり)</td>
+                            <td class="text-center align-middle">提案書登録済</td>
+                            <td class="text-center align-middle">
+                                <a href="proposal_registered_edit.html" class="btn btn-primary btn-sm">編集</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="align-middle">シフト管理表開発</td>
+                            <td class="text-center align-middle">京世</td>
+                            <td class="align-middle">Excel(マクロあり) / Webアプリ / iSOアプリ</td>
+                            <td class="text-center align-middle">一時保存</td>
+                            <td class="text-center align-middle">
+                                <a href="proposal_edit.html" class="btn btn-primary btn-sm">編集</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- 登録済提案書タブ -->
+            <div class="tab-pane fade" id="proposal" role="tabpanel" aria-labelledby="tab-proposal">
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <td class="text-center align-middle" style="width: 30%;">タイトル</td>
+                            <td class="text-center align-middle" style="width: 10%;">提案者</td>
+                            <td class="text-center align-middle" style="width: 30%;">開発ツール</td>
+                            <td class="text-center align-middle" style="width: 20%;">状況</td>
+                            <td style="width: 10%;"></td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="align-middle">年間カレンダー開発</td>
+                            <td class="text-center align-middle">京世</td>
+                            <td class="align-middle">Excel(マクロなし) / Excel(マクロあり)</td>
+                            <td class="text-center align-middle">提案書登録済</td>
+                            <td class="text-center align-middle">
+                                <a href="proposal_registered_edit.html" class="btn btn-primary btn-sm">編集</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- 一時保存タブ -->
+            <div class="tab-pane fade" id="editing" role="tabpanel" aria-labelledby="tab-editing">
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <td class="text-center align-middle" style="width: 30%;">タイトル</td>
+                            <td class="text-center align-middle" style="width: 10%;">提案者</td>
+                            <td class="text-center align-middle" style="width: 30%;">開発ツール</td>
+                            <td class="text-center align-middle" style="width: 20%;">状況</td>
+                            <td style="width: 10%;"></td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="align-middle">シフト管理表開発</td>
+                            <td class="text-center align-middle">京世</td>
+                            <td class="align-middle">Excel(マクロあり) / Webアプリ / iSOアプリ</td>
+                            <td class="text-center align-middle">一時保存</td>
+                            <td class="text-center align-middle">
+                                <a href="proposal_edit.html" class="btn btn-primary btn-sm">編集</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- メモタブ -->
+            <div class="tab-pane fade" id="memo" role="tabpanel" aria-labelledby="tab-memo">
+                考え中・・・
+            </div>
+        </div>
+    </div>
+
+    <!-- JS -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>進捗管理アプリ | 提案書作成</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/reset.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container-fluid px-5 mb-5">
+        <!-- ヘッダー -->
+        <div class="py-2 bg-white mb-3">
+            <div class="d-flex align-items-center justify-content-between">
+                <div>
+                    <h6 class="text-center">京世でログイン中！</h6>
+                </div>
+                <div class="d-flex align-items-center">
+                    <a href="top.html" class="btn btn-primary btn-sm me-2">トップへ</a>
+                    <a href="proposal_list.html" class="btn btn-primary btn-sm me-4">Idea一覧へ</a>
+                    <a href="login.html" class="btn btn-primary btn-sm">ログアウト</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- 提案書作成 -->
+        <h5><提案書作成></h5>
+        <table class="table table-bordered mb-3">
+            <tr>
+                <td class="align-middle ps-3" style="width: 20%;">提案者</td>
+                <td style="width: 80%;">京世</td>
+            </tr>
+            <tr>
+                <td class="align-middle ps-3">提案登録日</td>
+                <td>2024年8月14日</td>
+            </tr>
+            <tr>
+                <td class="align-middle ps-3"><span class="mark-required">※ </span>開発ツール</td>
+                <td>
+                    <div class="row g-2 mb-2">
+                        <div class="col-auto">
+                            <input type="checkbox" class="btn-check" id="btn-check-excel1" autocomplete="off" checked>
+                            <label class="btn btn-outline-primary btn-sm" for="btn-check-excel1">Excel(マクロなし)</label>
+                        </div>
+                        <div class="col-auto">
+                            <input type="checkbox" class="btn-check" id="btn-check-excel2" autocomplete="off" checked>
+                            <label class="btn btn-outline-primary btn-sm" for="btn-check-excel2">Excel(マクロあり)</label>
+                        </div>
+                        <div class="col-auto">
+                            <input type="checkbox" class="btn-check" id="btn-check-word" autocomplete="off">
+                            <label class="btn btn-outline-primary btn-sm" for="btn-check-word">Word</label>
+                        </div>
+                        <div class="col-auto">
+                            <input type="checkbox" class="btn-check" id="btn-check-pp" autocomplete="off">
+                            <label class="btn btn-outline-primary btn-sm" for="btn-check-pp">PowerPoint</label>
+                        </div>
+                        <div class="col-auto">
+                            <input type="checkbox" class="btn-check" id="btn-check-wa" autocomplete="off">
+                            <label class="btn btn-outline-primary btn-sm" for="btn-check-wa">Webアプリ</label>
+                        </div>
+                        <div class="col-auto">
+                            <input type="checkbox" class="btn-check" id="btn-check-iso" autocomplete="off">
+                            <label class="btn btn-outline-primary btn-sm" for="btn-check-iso">iSOアプリ</label>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="align-middle ps-3"><span class="mark-required">※ </span>タイトル (使用用途)</td>
+                <td>
+                    <input type="text" class="form-control" name="title" id="title" value="年間カレンダー開発">
+                </td>
+            </tr>
+            <tr>
+                <td class="align-middle ps-3"><span class="mark-norequired">※ </span>内容詳細</td>
+                <td>
+                    <textarea class="form-control" id="detail" rows="3">年間カレンダーを作成できるツール。
+マクロなし、マクロあり両方対応。</textarea>
+                </td>
+            </tr>
+            <tr>
+                <td class="align-middle ps-3"><span class="mark-norequired">※ </span>予想開発日数</td>
+                <td>
+                    <div class="row align-items-center g-2">
+                        <div class="col-auto">
+                            <input type="number" class="form-control" name="hours" id="hours" value="20">
+                        </div>
+                        <div class="col-auto">
+                            <span>日</span>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="align-middle ps-3"><span class="mark-norequired">※ </span>画像</td>
+                <td>
+                    <input class="form-control" type="file" id="images" multiple>
+                </td>
+            </tr>
+            <tr>
+                <td class="align-middle ps-3"><span class="mark-norequired">※ </span>参考URL</td>
+                <td>
+                    <textarea class="form-control" id="urls" rows="3"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td class="align-middle ps-3"><span class="mark-norequired">※ </span>個人メモ</td>
+                <td>
+                    <textarea class="form-control" id="memo" rows="3"></textarea>
+                </td>
+            </tr>
+        </table>
+        <div class="d-flex align-items-center justify-content-between">
+            <div class="ms-3">
+                <a href="proposal_list.html" class="btn btn-primary">一覧に戻る</a>
+            </div>
+            <div class="me-3">
+                <a href="registered_edit_confirm.html" class="btn btn-primary">更新</a>
+            </div>
+        </div>
+    </div>
+    <!-- JS -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

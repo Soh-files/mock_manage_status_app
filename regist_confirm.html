@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>進捗管理アプリ | 提案書登録確認</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/reset.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container-fluid px-5 mb-5">
+        <!-- ヘッダー -->
+        <div class="py-2 bg-white mb-3">
+            <div class="d-flex align-items-center justify-content-between">
+                <div>
+                    <h6 class="text-center">京世でログイン中！</h6>
+                </div>
+                <div class="d-flex align-items-center">
+                    <a href="top.html" class="btn btn-primary btn-sm me-2">トップへ</a>
+                    <a href="proposal_list.html" class="btn btn-primary btn-sm me-4">Idea一覧へ</a>
+                    <a href="login.html" class="btn btn-primary btn-sm">ログアウト</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- 提案書作成 -->
+        <h5 class="mb-2"><提案書登録確認></h5>
+        <div class="row mb-5">
+            <div class="col col-md-2 col-lg-4"></div>
+            <div class="col-12 col-md-8 col-lg-4 text-center">
+                <h6 class="mb-2">以下の内容で登録します。よろしいですか？</h6>
+                <div class="d-flex align-items-center justify-content-center">
+                    <a href="proposal_list.html" class="btn btn-primary me-3">登録する</a>
+                    <a href="proposal.html" class="btn btn-primary">キャンセル</a>
+                </div>
+            </div>
+            <div class="col col-md-2 col-lg-4"></div>
+        </div>
+        <table class="table table-bordered mb-3">
+            <tr>
+                <td class="align-middle ps-3" style="width: 20%;">提案者</td>
+                <td style="width: 80%;">京世</td>
+            </tr>
+            <tr>
+                <td class="align-middle ps-3">提案登録日</td>
+                <td>2024年8月14日</td>
+            </tr>
+            <tr>
+                <td class="align-middle ps-3">開発ツール</td>
+                <td>Excel(マクロあり) / Webアプリ / iSOアプリ</td>
+            </tr>
+            <tr>
+                <td class="align-middle ps-3">タイトル (使用用途)</td>
+                <td>タスク管理ツール</td>
+            </tr>
+            <tr>
+                <td class="align-middle ps-3">内容詳細</td>
+                <td>
+                    タスクを管理するためのツール。<br>
+                    Excelは小規模事業向け、PCやスマホでも管理できるようにするためWebアプリ、iSOアプリを作成する<br>
+                    WebアプリとiSOアプリは同期できるようにする
+                </td>
+            </tr>
+            <tr>
+                <td class="align-middle ps-3">予想開発日数</td>
+                <td>120 日</td>
+            </tr>
+            <tr>
+                <td class="align-middle ps-3">画像</td>
+                <td>アップロードする画像のURLか、プレビュー画像を出す</td>
+            </tr>
+            <tr>
+                <td class="align-middle ps-3">参考URL</td>
+                <td>
+                    https://xxxx.com/<br>
+                    https://aaa.bbbb.com/<br>
+                    https://ccc.dddd.com/
+                </td>
+            </tr>
+            <tr>
+                <td class="align-middle ps-3">個人メモ</td>
+                <td>提案者のみ閲覧、編集ができる</td>
+            </tr>
+        </table>
+    </div>
+    <!-- JS -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
